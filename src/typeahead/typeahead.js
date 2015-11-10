@@ -46,7 +46,6 @@ angular.module('ui.bootstrap.typeahead', ['ui.bootstrap.debounce', 'ui.bootstrap
     var isEditable = originalScope.$eval(attrs.typeaheadEditable) !== false;
     originalScope.$watch(attrs.typeaheadEditable, function (newVal) {
       isEditable = newVal !== false;
-      modelCtrl.$setValidity('editable', isEditable);
     }); 
 
     //binding to a variable that indicates if matches are being retrieved asynchronously
